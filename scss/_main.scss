@@ -1,0 +1,134 @@
+
+
+#index {
+
+  
+    grid-area: main;
+    display: grid;
+    grid-template-columns:  1fr 1fr 1fr 1fr;
+    grid-template-rows:     1fr 1fr 1fr 1fr;
+
+    row-gap: 5px;
+    column-gap: 5px ;
+    
+
+   section {
+
+    @include sectionIndex;
+
+
+    }
+
+  
+    
+    .hijo_1 {
+
+
+grid-row: 1/3;
+background-image: url('../assets/imagenes/ropamujer.png');
+background-position: center;
+background-size: contain;
+background-repeat: no-repeat;
+
+
+      
+
+     
+    }
+    
+    .hijo_2 {
+
+      grid-area: 1 / 2  /  3 / 4;
+      background-image: url('../assets/imagenes/promo2x1.jpg');
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+
+
+   
+    
+      
+    }
+    
+    
+    
+    .hijo_3 { 
+
+      grid-row: 1/3;
+      background-image: url('../assets/imagenes/ropahombre.png');
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+     
+      
+
+
+   
+
+    
+      
+    }
+  
+    
+    .hijo_4 { 
+
+      grid-row: 3/5;
+      background-image: url('../assets/imagenes/musculosanirvana.jpg');
+      background-position: center;
+
+
+
+   
+
+    
+      
+    }
+    .hijo_5 { 
+
+    grid-area: 3 / 1 / 5 / 3 ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+
+
+    }
+
+   
+    
+
+
+
+    
+     
+    
+    .hijo_6 {
+
+      grid-row: 3/5;
+      background-image: url('../assets/imagenes/remfender.jpg');
+  
+      background-position: center;
+    
+      
+    }
+
+    
+
+     
+
+   
+
+    
+     
+}
+    
+
+  
+
+
+
+
+
+
+

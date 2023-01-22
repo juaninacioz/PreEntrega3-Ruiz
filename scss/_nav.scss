@@ -1,0 +1,48 @@
+nav {
+    grid-area: nav;
+
+    text-align: center;
+
+      
+    .isjonnylogo {
+      height: 200px;
+      width: 150px;
+      padding-bottom: 30px;
+      display: flex;
+      justify-items: left;
+    }
+
+.item {
+  
+  a {
+    padding: 2px;
+    font-size: 30px;
+    
+  
+  }
+  
+  .nav-item a:hover {
+    border-bottom: 1px solid $colorBlanco;
+  }
+  
+  .navbar ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+
+
+}
+
+}
+
+.center-menu {
+
+  text-align: center;
+
+
+}
+
+
+

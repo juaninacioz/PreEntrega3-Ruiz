@@ -1,0 +1,331 @@
+#grilla {
+  width: 75%;
+  max-width: 1200px;
+  height: 150vh;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 0.5fr 1fr 80px;
+  grid-template-areas: "header header header" "main main main" "footer footer footer ";
+  grid-column-gap: 10px;
+  grid-row-gap: 10px; }
+
+@media screen and (max-width: 1200px) {
+  #grilla {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 0.5fr 1fr 80px;
+    grid-template-areas: "header  header" "main  main" "footer footer"; } }
+
+@media screen and (max-width: 900px) {
+  #grilla {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 0.5fr 1fr 80px;
+    grid-template-areas: "header  header" "main  main" "footer footer"; } }
+
+@media screen and (max-width: 600px) {
+  #grilla {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 1fr 1fr;
+    grid-template-areas: "header  " "main  " "footer "; } }
+
+@media screen and (max-width: 300px) {
+  #grilla {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 1fr 1fr;
+    grid-template-areas: "header  " "main  " "footer "; } }
+
+header {
+  grid-area: header;
+  overflow: hidden; }
+  header figure {
+    height: 100%;
+    width: 100%;
+    overflow: hidden; }
+    header figure .logo-banda {
+      height: 100%;
+      width: 100%;
+      object-fit: COVER; }
+
+nav {
+  grid-area: nav;
+  text-align: center; }
+  nav .isjonnylogo {
+    height: 200px;
+    width: 150px;
+    padding-bottom: 30px;
+    display: flex;
+    justify-items: left; }
+  nav .item a {
+    padding: 2px;
+    font-size: 30px; }
+  nav .item .nav-item a:hover {
+    border-bottom: 1px solid #ffffff; }
+  nav .item .navbar ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-around; }
+
+.center-menu {
+  text-align: center; }
+
+#index {
+  grid-area: main;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  row-gap: 5px;
+  column-gap: 5px; }
+  #index section {
+    background-color: #000000;
+    text-align: center;
+    color: #ffffff;
+    border: #000000 1px solid; }
+  #index .hijo_1 {
+    grid-row: 1/3;
+    background-image: url("../assets/imagenes/ropamujer.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat; }
+  #index .hijo_2 {
+    grid-area: 1 / 2  /  3 / 4;
+    background-image: url("../assets/imagenes/promo2x1.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center; }
+  #index .hijo_3 {
+    grid-row: 1/3;
+    background-image: url("../assets/imagenes/ropahombre.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat; }
+  #index .hijo_4 {
+    grid-row: 3/5;
+    background-image: url("../assets/imagenes/musculosanirvana.jpg");
+    background-position: center; }
+  #index .hijo_5 {
+    grid-area: 3 / 1 / 5 / 3;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  #index .hijo_6 {
+    grid-row: 3/5;
+    background-image: url("../assets/imagenes/remfender.jpg");
+    background-position: center; }
+
+footer {
+  background-color: #262929;
+  grid-area: footer;
+  grid-column: 1/ 4;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 3rem; }
+  footer .Redes {
+    width: 100%;
+    overflow-y: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-around; }
+    footer .Redes .boton {
+      height: 50px;
+      width: 100px;
+      background-color: #ffffff;
+      border: 1px #000000 solid;
+      border-radius: 35%;
+      font-style: none;
+      font-size: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      footer .Redes .boton a {
+        color: #000000; }
+    footer .Redes .Redes_hijos .logoRed {
+      width: 50px;
+      height: 50px;
+      border-radius: 40%; }
+
+@media screen and (max-width: 1200px) {
+  footer div {
+    background-color: #262929;
+    grid-area: footer;
+    grid-column: 1f 1fr;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    overflow-y: hidden;
+    height: max-content; }
+    footer div .logoRed {
+      width: 5px;
+      height: 5px;
+      border-radius: 30%; } }
+
+@media screen and (max-width: 900px) {
+  footer div {
+    background-color: #262929;
+    grid-area: footer;
+    grid-column: 1f 1fr;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    overflow-y: hidden;
+    height: max-content; }
+    footer div .logoRed {
+      width: 5px;
+      height: 5px;
+      border-radius: 30%; } }
+
+@media screen and (max-width: 600px) {
+  footer div {
+    background-color: #262929;
+    grid-area: footer;
+    grid-column: 1f 1fr;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    overflow-y: hidden;
+    height: max-content; }
+    footer div .Redes_hijos .logoRed {
+      width: 5px;
+      height: 5px;
+      border-radius: 30%; } }
+
+@media screen and (max-width: 300px) {
+  footer div {
+    background-color: #262929;
+    grid-area: footer;
+    grid-column: 1f 1fr;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    overflow-y: hidden; }
+    footer div .Redes_hijos .logoRed {
+      width: 5px;
+      height: 5px;
+      border-radius: 30%; } }
+
+#nosotros {
+  grid-area: main;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #232526;
+  background: -webkit-linear-gradient(to right, #232526, #414345);
+  background: linear-gradient(to right, #232526, #414345); }
+  #nosotros h3 {
+    padding-bottom: 50px;
+    color: #ffffff;
+    overflow-y: hidden;
+    text-align: center;
+    font-weight: bold; }
+  #nosotros p {
+    font-size: 20px;
+    text-align: justify;
+    color: #ffffff;
+    margin-left: 150px;
+    margin-right: 150px; }
+  #nosotros video {
+    width: 752px; }
+
+#Contacto {
+  overflow-y: hidden;
+  background: #232526;
+  background: -webkit-linear-gradient(to right, #232526, #414345);
+  background: linear-gradient(to right, #232526, #414345);
+  grid-area: main;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center; }
+  #Contacto .datosContacto h2 {
+    color: #ffffff;
+    overflow-y: hidden;
+    text-align: center;
+    font-weight: bold; }
+  #Contacto .datosContacto h3 {
+    color: #ffffff;
+    overflow-y: hidden; }
+  #Contacto .datosContacto ul li {
+    color: #ffffff; }
+    #Contacto .datosContacto ul li i {
+      padding-right: 15px; }
+    #Contacto .datosContacto ul li a {
+      color: #ffffff; }
+  #Contacto form {
+    width: 350px;
+    color: #ffffff;
+    margin-bottom: 40px; }
+    #Contacto form label {
+      font-size: 20px;
+      display: block;
+      width: 100%;
+      padding: 10px;
+      text-align: center; }
+    #Contacto form input,
+    #Contacto form textarea {
+      margin-bottom: 20px;
+      width: 100%;
+      padding: 5px;
+      box-sizing: border-box;
+      border: 1px solid #000000; }
+
+@media screen and (max-width: 800px) {
+  #Contacto {
+    overflow-y: hidden;
+    background: #232526;
+    background: -webkit-linear-gradient(to right, #232526, #414345);
+    background: linear-gradient(to right, #232526, #414345);
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center; }
+    #Contacto .datosContacto h2 {
+      color: #ffffff;
+      overflow-y: hidden;
+      text-align: center;
+      font-weight: bold; }
+    #Contacto .datosContacto h3 {
+      color: #ffffff;
+      overflow-y: hidden; }
+    #Contacto .datosContacto ul li {
+      color: #ffffff; }
+      #Contacto .datosContacto ul li i {
+        padding-right: 15px; }
+      #Contacto .datosContacto ul li a {
+        color: #ffffff; }
+    #Contacto form {
+      width: 350px;
+      color: #ffffff;
+      margin-bottom: 40px; }
+      #Contacto form label {
+        font-size: 20px;
+        display: block;
+        width: 100%;
+        padding: 10px;
+        text-align: center; }
+      #Contacto form input,
+      #Contacto form textarea {
+        margin-bottom: 20px;
+        width: 100%;
+        padding: 5px;
+        box-sizing: border-box;
+        border: 1px solid #000000; } }
+
+#talle {
+  grid-area: main; }
+
+#productos {
+  grid-area: main; }
